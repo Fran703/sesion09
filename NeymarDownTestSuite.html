@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>NeymarDownTestSuite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LoginCorrectoAdmin</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='postLogin']/p[5]/button</option><option>//button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LoginCorrectoUsuario</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>fran</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='postLogin']/p[5]/button</option><option>//button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">LoginIncorrecto</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='postLogin']/p[5]/button</option><option>//button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RegistroIncorrectoEmailExiste</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Registrarse<datalist><option>link=Registrarse</option><option>//a[contains(text(),'Registrarse')]</option><option>//form[@id='postLogin']/p[6]/a</option><option>//a[contains(@href, 'usuario.nuevo.php')]</option><option>//p[6]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//div[2]/form/div/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//div[2]/form/div/input</option></datalist></td><td>jjcanada@ual.es</td>
+</tr>
+<tr><td>click</td><td>//input[@id='usuario']<datalist><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/form/div[2]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@id='usuario']<datalist><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/form/div[2]/input</option></datalist></td><td>jj</td>
+</tr>
+<tr><td>click</td><td>//input[@id='clave']<datalist><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@id='clave']<datalist><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Registrarse']<datalist><option>//input[@value='Registrarse']</option><option>//form[@id='nuevoUsuario']/input</option><option>//form/input</option><option>css=input.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RegistroIncorrectoUsuarioExiste</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Registrarse<datalist><option>link=Registrarse</option><option>//a[contains(text(),'Registrarse')]</option><option>//form[@id='postLogin']/p[6]/a</option><option>//a[contains(@href, 'usuario.nuevo.php')]</option><option>//p[6]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//div[2]/form/div/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//div[2]/form/div/input</option></datalist></td><td>prueba@gmail.com</td>
+</tr>
+<tr><td>click</td><td>//input[@id='usuario']<datalist><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/form/div[2]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@id='usuario']<datalist><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/form/div[2]/input</option></datalist></td><td>fran</td>
+</tr>
+<tr><td>click</td><td>//input[@id='clave']<datalist><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@id='clave']<datalist><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Registrarse']<datalist><option>//input[@value='Registrarse']</option><option>//form[@id='nuevoUsuario']/input</option><option>//form/input</option><option>css=input.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RegistroIncorrectoContraseñasNoCoinciden</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Registrarse<datalist><option>link=Registrarse</option><option>//a[contains(text(),'Registrarse')]</option><option>//form[@id='postLogin']/p[6]/a</option><option>//a[contains(@href, 'usuario.nuevo.php')]</option><option>//p[6]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//div[2]/form/div/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//div[2]/form/div/input</option></datalist></td><td>prueba@gmail.com</td>
+</tr>
+<tr><td>click</td><td>//input[@id='usuario']<datalist><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/form/div[2]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@id='usuario']<datalist><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/form/div[2]/input</option></datalist></td><td>prueba</td>
+</tr>
+<tr><td>click</td><td>//input[@id='clave']<datalist><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@id='clave']<datalist><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>12345</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Registrarse']<datalist><option>//input[@value='Registrarse']</option><option>//form[@id='nuevoUsuario']/input</option><option>//form/input</option><option>css=input.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RegistroIncorrectoCamposVacíos</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Registrarse<datalist><option>link=Registrarse</option><option>//a[contains(text(),'Registrarse')]</option><option>//form[@id='postLogin']/p[6]/a</option><option>//a[contains(@href, 'usuario.nuevo.php')]</option><option>//p[6]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Registrarse']<datalist><option>//input[@value='Registrarse']</option><option>//form[@id='nuevoUsuario']/input</option><option>//form/input</option><option>css=input.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">RegistroCorrecto</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Registrarse<datalist><option>link=Registrarse</option><option>//a[contains(text(),'Registrarse')]</option><option>//form[@id='postLogin']/p[6]/a</option><option>//a[contains(@href, 'usuario.nuevo.php')]</option><option>//p[6]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//div[2]/form/div/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//div[2]/form/div/input</option></datalist></td><td>prueba@gmail.com</td>
+</tr>
+<tr><td>click</td><td>//input[@id='usuario']<datalist><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/form/div[2]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@id='usuario']<datalist><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/form/div[2]/input</option></datalist></td><td>prueba</td>
+</tr>
+<tr><td>click</td><td>//input[@id='clave']<datalist><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>//input[@id='clave']<datalist><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//div[3]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Registrarse']<datalist><option>//input[@value='Registrarse']</option><option>//form[@id='nuevoUsuario']/input</option><option>//form/input</option><option>css=input.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ListarUsuarios</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='postLogin']/p[5]/button</option><option>//button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Listar Usuarios<datalist><option>link=Listar Usuarios</option><option>//a[contains(text(),'Listar Usuarios')]</option><option>xpath=(//a[@type='button'])[2]</option><option>//a[contains(@href, 'usuario.listar.php')]</option><option>//div[3]/a</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">BorrarUsuario</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='postLogin']/p[5]/button</option><option>//button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Listar Usuarios<datalist><option>link=Listar Usuarios</option><option>//a[contains(text(),'Listar Usuarios')]</option><option>xpath=(//a[@type='button'])[2]</option><option>//a[contains(@href, 'usuario.listar.php')]</option><option>//div[3]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Borrar<datalist><option>link=Borrar</option><option>//a[contains(@href, 'usuario.borrar.php?id=juan')]</option><option>//td[5]/a</option><option>css=a.btn.btn-secondary.btn-xs</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=borrarUsuario<datalist><option>name=borrarUsuario</option><option>//button[@name='borrarUsuario']</option><option>//form[@id='borrarInformacion']/button</option><option>//button</option><option>css=button[name="borrarUsuario"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ModificarUsuario</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='postLogin']/p[5]/button</option><option>//button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Listar Usuarios<datalist><option>link=Listar Usuarios</option><option>//a[contains(text(),'Listar Usuarios')]</option><option>xpath=(//a[@type='button'])[2]</option><option>//a[contains(@href, 'usuario.listar.php')]</option><option>//div[3]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//a/b<datalist><option>//a/b</option><option>css=a.btn.btn-tercero.btn-xs &gt; b</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@name='email']</option><option>//input</option><option>css=input[name="email"]</option></datalist></td><td>juan@hotmail.com</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//div[3]/input</option><option>css=input[name="clave"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//div[3]/input</option><option>css=input[name="clave"]</option></datalist></td><td>12345</td>
+</tr>
+<tr><td>click</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@name='clave2']</option><option>//div[4]/input</option><option>css=input[name="clave2"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@name='clave2']</option><option>//div[4]/input</option><option>css=input[name="clave2"]</option></datalist></td><td>12345</td>
+</tr>
+<tr><td>click</td><td>name=modificarUsuario<datalist><option>name=modificarUsuario</option><option>//button[@name='modificarUsuario']</option><option>//button</option><option>css=button[name="modificarUsuario"]</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CrearUsuarioCorrecto</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='postLogin']/p[5]/button</option><option>//button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Crear Usuario<datalist><option>link=Crear Usuario</option><option>//a[contains(text(),'Crear Usuario')]</option><option>xpath=(//a[@type='button'])[3]</option><option>//a[contains(@href, 'usuario.nuevo.admin.php')]</option><option>//a[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//input</option></datalist></td><td>pepito@gmail.com</td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>pepito</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//form/div[3]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//form/div[3]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=activo<datalist><option>name=activo</option><option>//input[@name='activo']</option><option>//form[@id='nuevoUsuario']/div[5]/input</option><option>//div[5]/input</option><option>css=input[name="activo"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@name='rol'])[2]<datalist><option>xpath=(//input[@name='rol'])[2]</option><option>//input[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//input[@value='Registrarse']<datalist><option>//input[@value='Registrarse']</option><option>//div/input</option><option>css=input.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CrearUsuarioIncorrecto</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='postLogin']/p[5]/button</option><option>//button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Crear Usuario<datalist><option>link=Crear Usuario</option><option>//a[contains(text(),'Crear Usuario')]</option><option>xpath=(//a[@type='button'])[3]</option><option>//a[contains(@href, 'usuario.nuevo.admin.php')]</option><option>//a[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=email<datalist><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='nuevoUsuario']/div/input</option><option>//input</option></datalist></td><td>jjcanada@ual.es</td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@id='usuario']</option><option>//form[@id='nuevoUsuario']/div[2]/input</option><option>//div[2]/input</option></datalist></td><td>jjcanada</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=clave</option><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//form/div[3]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@id='clave']</option><option>//form[@id='nuevoUsuario']/div[3]/input</option><option>//form/div[3]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave2<datalist><option>name=clave2</option><option>//input[@id='clave2']</option><option>//form[@id='nuevoUsuario']/div[4]/input</option><option>//div[4]/input</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//input[@value='Registrarse']<datalist><option>//input[@value='Registrarse']</option><option>//div/input</option><option>css=input.btn.btn-secondary</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SalirSistema</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost/hm2018/index.php<datalist><option>http://localhost/hm2018/index.php</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=usuario<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=clave<datalist><option>name=usuario</option><option>//input[@name='usuario']</option><option>//form[@id='postLogin']/div/input</option><option>//input</option><option>css=input[name="usuario"]</option><option>name=clave</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=clave<datalist><option>name=clave</option><option>//input[@name='clave']</option><option>//form[@id='postLogin']/div[2]/input</option><option>//div[2]/input</option><option>css=input[name="clave"]</option></datalist></td><td>1234</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//form[@id='postLogin']/p[5]/button</option><option>//button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Salir del sistema<datalist><option>link=Salir del sistema</option><option>//a[contains(text(),'Salir del sistema')]</option><option>//a[contains(@href, './salir.php')]</option><option>//p[3]/a</option><option>css=p.text-center &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Volver a pagina de inicio<datalist><option>link=Volver a pagina de inicio</option><option>//a[contains(text(),'Volver a pagina de inicio')]</option><option>//a[contains(@href, './index.php')]</option><option>//a</option><option>css=a</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

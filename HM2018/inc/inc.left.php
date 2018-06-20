@@ -36,10 +36,6 @@ if(!isset($_SESSION['usuario'])){
   </p>
 
 </form>
-<p>
-  <a href="usuario.recuperar.php">Recuperar contraseña</a><br>
-  <!--<a href="usuario.registrar.php">Registrarse</a>-->
-</p>
 
 <!--introducir usuario al dar al link -> recuperarClave.php?usuario=nombreusuario -> mandar nueva clave al email del usuario-->
 <!-- -->
