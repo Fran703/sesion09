@@ -5,4 +5,4 @@
 
 ### Realización práctica correspondiente a la aplicación de Login con usuarios y admin
 
-### proyectohmis.northeurope.cloudapp.azure.com
+### http://proyectohmis.northeurope.cloudapp.azure.com
