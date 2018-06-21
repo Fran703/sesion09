@@ -266,6 +266,7 @@ function login($usuario, $contraseña){
   	?>
         <div class="alert alert-danger" role="alert">Usuario o contraseña vacíos</div>
         <?php
+        return 0;
   }
   else {
 	global $conn;
@@ -295,6 +296,17 @@ function login($usuario, $contraseña){
 						//Rol del usuario
 			$_SESSION["fechaUltimoAcceso"] = date("y-m-d");
 			//modficarFechaUltimoAcceso(date("y-m-d"));
+
+      return 1;
 		}
+  }
+
+    // Metodo de logout
+    function logout(){
+
+    // ELimina todas las variables
+    session_unset();
+    // destruye la sesion.
+   session_destroy();
 }
 ?>

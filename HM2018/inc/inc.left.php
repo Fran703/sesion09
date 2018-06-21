@@ -7,7 +7,6 @@ if(isset($_POST['usuario']) && isset($_POST['clave'])){
     login($_POST['usuario'], $_POST['clave']);
 }
 
-
 if(!isset($_SESSION['usuario'])){
  ?>
 
