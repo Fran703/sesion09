@@ -1,8 +1,7 @@
 <?php
-use PHPUnit\Framework\TestCase;
-include ".modelo/usuario.php";
+include_once ".modelo/usuario.php";
 require_once "./modelo/usuario.php";
-final class LoginTest extends TestCase {
+final class LoginTest extends PHPUnit_Framework_TestCase {
 
 	private $sesion;
 

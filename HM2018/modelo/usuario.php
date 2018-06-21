@@ -8,16 +8,19 @@ function altaUsuario($usuario, $contraseña, $correo, $fechaCreacion, $fechaUlti
   	?>
         <div class="alert alert-danger" role="alert">El email no puede ser vacío</div>
     <?php
+    return 0;
 	}
     if(empty($usuario)) {
     ?>
     	<div class="alert alert-danger" role="alert">El usuario no puede ser vacío</div>
     <?php
+    return 0;
     }
     if(empty($contraseña)) {
     ?>
     	<div class="alert alert-danger" role="alert">La contraseña no puede ser vacía</div>
     <?php
+    return 0;
     }
     $buscarCorreo = "SELECT * FROM usuario WHERE email = '$correo'";
     $resultado = $conn->query($buscarCorreo);
@@ -27,6 +30,7 @@ function altaUsuario($usuario, $contraseña, $correo, $fechaCreacion, $fechaUlti
     ?>
     	<div class="alert alert-danger" role="alert">El correo ya existe</div>
     <?php
+    return 0;
     }
 
     $buscarUsuario = "SELECT * FROM usuario WHERE Username = '$usuario'";
@@ -36,12 +40,12 @@ function altaUsuario($usuario, $contraseña, $correo, $fechaCreacion, $fechaUlti
     if($contador2 == 1) {
     ?>
     	<div class="alert alert-danger" role="alert">El usuario ya existe</div>
-    <?php
+    <?php return 0;
     }
     if($contraseña != $contraseña2) {
     ?>
     	<div class="alert alert-danger" role="alert">Las contraseñas no coinciden</div>
-    <?php
+    <?php return 0;
     }
 
 
@@ -55,6 +59,7 @@ function altaUsuario($usuario, $contraseña, $correo, $fechaCreacion, $fechaUlti
 	if ($conn->query($sql) === TRUE)
 		return (true);
 	return (false);
+  return 1;
 	}
 }
 

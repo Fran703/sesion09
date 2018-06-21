@@ -16,7 +16,7 @@ if($_SESSION["conectado"]){
     $fechaC = date("y-m-d");
     $fechaUltAcc = date("y-m-d");
     $validar = altaUsuarioAdmin($_GET['usuario'], $_GET['clave'], $_GET['email'], $_GET['activo'], $_GET['rol'], 
-                                        $fechaC, $fechaUltAcc);
+                                        $fechaC, $fechaUltAcc, $_GET['clave2']);
     //if() {
         if($validar){
 ?>
@@ -57,25 +57,19 @@ if($_SESSION["conectado"]){
       echo "<br><input type='checkbox' name='activo'/> Activo<br>";
   ?></div><br>
       </div>
-       <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-6 ">
-            <div class="input-group margin">
-              <input type="radio" name = "rol"
-              <?php
-              if(isset($rol) && $rol == 'admin') echo 'checked'; ?>
-              value = 'admin'>Admin
-                <input type="radio" name = "rol"
-                  <?php
-                  if(isset($rol) && $rol == 'usuario') echo 'checked'; ?>
-                  value = 'usuario'>Usuario
-            </div><br>
-              <input type="submit" class="btn btn-secondary" value="Registrarse">
-              <a href="index.php" class="btn btn-secondary">Cancelar</a><br>
-          </div>  
-        </div>
-       </div>
-       
+    <div class="input-group margin">
+      <input type="radio" name = "rol"
+      <?php
+      if(isset($rol) && $rol == 'admin') echo 'checked'; ?>
+      value = 'admin'>Admin
+    <input type="radio" name = "rol"
+      <?php
+      if(isset($rol) && $rol == 'usuario') echo 'checked'; ?>
+      value = 'usuario'>Usuario
+
+    </div>
+    <input type="submit" class="btn btn-secondary" value="Registrarse">
+    <a href="index.php" class="btn btn-secondary">Cancelar</a><br>
   </form>
 
 
